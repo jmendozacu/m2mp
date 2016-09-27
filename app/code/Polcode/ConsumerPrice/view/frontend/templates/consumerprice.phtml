@@ -1,0 +1,9 @@
+<?php
+$_product = $block->getProduct();
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+if(!is_null($_product->getConsumerPrice())): ?>
+    <div>
+        <b>Consumer Price:</b>
+        <?php echo $_helper->productAttribute($_product, $_product->getConsumerPrice(), 'regular_price');  ?>
+    </div>
+<?php endif; ?>

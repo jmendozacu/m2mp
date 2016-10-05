@@ -1,0 +1,8 @@
+<?php
+$_product = $block->getProduct();
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+if(!is_null($_product->getConsumerPrice())): ?>
+    <div>
+        <?php echo $_product->getConsumerPrice(); ?>
+    </div>
+<?php endif; ?>

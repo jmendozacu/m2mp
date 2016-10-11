@@ -1,0 +1,8 @@
+.product-info-main .product-info-price .price-box {
+    color: #FF6E3D;
+    font-size: larger;
+}
+.product-info-main .product-info-price .price-box .consumer-price {
+    color: #777777;
+    font-size: smaller;
+}

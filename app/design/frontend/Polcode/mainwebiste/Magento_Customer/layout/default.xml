@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!--<referenceBlock name="content" remove="true" />-->
+        <referenceBlock name="authorization-link-login" remove="true" />
+        
+        <referenceBlock name="header.links">
+            <block class="Magento\Customer\Block\Account\Customer" name="customer" template="account/customer.phtml" before="-"/>
+            <block class="Magento\Customer\Block\Account\AuthorizationLink" name="stores-login" template="stores/login/header.phtml" after="customer"/>
+        </referenceBlock>
+        
+
+        <!--<move element="register-link" destination="delete" />-->
+        <move element="authorization-link" destination="delete" />
+    </body>
+</page>

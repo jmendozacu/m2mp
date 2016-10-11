@@ -90,5 +90,5 @@ $priceHelper = $this->helper('Magento\Framework\Pricing\Helper\Data');
 <?php endif; ?>
 
 <?php if(!is_null($block->getSaleableItem()->getConsumerPrice())): ?>
-    <p><span class=""><b><?php echo __('Consumer Price: '); ?></b> <?php echo $helper->getDisplayPriceWithCurrency($block->getSaleableItem()->getConsumerPrice()) ?></span></p>
+    <p><span class="consumer-price"><?php echo __('Consumer Price: '); ?> <?php echo $helper->getDisplayPriceWithCurrency($block->getSaleableItem()->getConsumerPrice()) ?></span></p>
 <?php endif; ?>

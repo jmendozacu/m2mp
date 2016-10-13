@@ -2,10 +2,6 @@
 
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xs">
     <body>
-        <referenceBlock name="customer_form_register">
-            <arguments>
-                <argument name="show_address_fields" xsi:type="string">1</argument>
-            </arguments>
-        </referenceBlock>
+        <!--<referenceBlock name="content" remove="true"/>-->
     </body>
 </page>
